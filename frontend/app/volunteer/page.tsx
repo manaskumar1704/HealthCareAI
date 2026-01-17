@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import { Heart, ShieldCheck } from "lucide-react";
+import { toast } from "sonner";
 
 export default function VolunteerPage() {
     return (
@@ -26,7 +27,16 @@ export default function VolunteerPage() {
                     Make a difference in your community. Help neighbors access healthcare and support.
                 </p>
 
-                <form className="space-y-6 rounded-xl border border-border bg-card p-6 shadow-sm md:p-8">
+                <form
+                    onSubmit={(e) => {
+                        e.preventDefault();
+                        toast.success("Application received", {
+                            description: "We'll be in touch shortly to complete your verification.",
+                        });
+                        (e.target as HTMLFormElement).reset();
+                    }}
+                    className="space-y-6 rounded-xl border border-border bg-card p-6 shadow-sm md:p-8"
+                >
                     <div className="space-y-2">
                         <label htmlFor="email" className="text-sm font-medium">
                             Email Address

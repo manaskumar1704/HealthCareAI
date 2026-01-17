@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { toast } from "sonner";
 
 export default function PatientPage() {
     return (
@@ -21,7 +22,16 @@ export default function PatientPage() {
                     Fill out this simple form to connect with a verified volunteer. Your privacy is our priority.
                 </p>
 
-                <form className="space-y-6">
+                <form
+                    onSubmit={(e) => {
+                        e.preventDefault();
+                        toast.success("Request sent successfully", {
+                            description: "Our dedicated team will contact you shortly.",
+                        });
+                        (e.target as HTMLFormElement).reset();
+                    }}
+                    className="space-y-6"
+                >
                     <div className="grid gap-6 sm:grid-cols-2">
                         <div className="space-y-2">
                             <label htmlFor="firstName" className="text-sm font-medium">
