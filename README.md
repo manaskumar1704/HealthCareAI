@@ -2,11 +2,11 @@
 
 A lightweight healthcare support web application built for NGOs and communities.
 
-## 📋 Overview
+## Overview
 
 This project connects patients seeking healthcare support with compassionate volunteers. Built with simplicity, trust, and accessibility as core values.
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework**: Next.js 16 (App Router)
@@ -22,7 +22,7 @@ This project connects patients seeking healthcare support with compassionate vol
 - **Package Manager**: uv
 - **Database**: Supabase (PostgreSQL) - *to be configured*
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Bun](https://bun.sh/) installed
@@ -49,7 +49,7 @@ uv run uvicorn main:app --reload
 
 Backend API will be available at `http://localhost:8000`
 
-## 🧪 Development
+## Development
 
 ### Lint
 ```bash
@@ -69,7 +69,7 @@ cd frontend
 bun run type-check
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 HealthCareAI/
@@ -89,7 +89,7 @@ HealthCareAI/
 └── DESIGN.md                # UI/UX design principles
 ```
 
-## 🎨 Design Principles
+## Design Principles
 
 See [DESIGN.md](DESIGN.md) for complete guidelines.
 
@@ -99,16 +99,12 @@ See [DESIGN.md](DESIGN.md) for complete guidelines.
 - Mobile-first, accessible
 - Blue for trust, Green for health
 
-## 🤖 Agent Guidelines
-
-See [AGENTS.md](AGENTS.md) for AI-assisted development workflow.
-
 **Core Principles:**
 - Simplicity over sophistication
 - Healthcare data handled carefully
 - Forms should be short, clear, mobile-friendly
 - No unnecessary abstractions
 
-## 📝 License
+## License
 
 Built for NGO evaluation purposes. Handle healthcare data responsibly.
