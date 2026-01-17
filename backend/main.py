@@ -11,7 +11,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://health-care-ai-three.vercel.app/",
+        "https://health-care-ai-three.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
