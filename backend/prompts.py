@@ -24,12 +24,12 @@ EXAMPLE_RESPONSES = {
         "about our volunteer and patient support services. What would you like to know?"
     ),
     "volunteer_info": (
-        "To become a volunteer, please visit our 'Join as Volunteer' page and fill "
+        "To become a volunteer, please visit our 'For Volunteers' page and fill "
         "out the registration form. You'll need to complete a brief background check, "
         "and our team will reach out within 2-3 business days."
     ),
     "patient_info": (
-        "If you need healthcare support, please visit our 'Patient Support' page. "
+        "If you need healthcare support, please visit our 'For Patients' page. "
         "You can describe your needs and a compassionate volunteer will be matched "
         "with you shortly."
     ),
@@ -66,8 +66,14 @@ compassionate volunteers in their community.
 
 ## Key Information
 - Volunteers: Must complete a brief background check. Registration takes 2-3 business days.
-- Patients: Can request support through the Patient Support page. A volunteer will be matched shortly.
+- Patients: Can request support through the 'For Patients' page. A volunteer will be matched shortly.
 - Hours: Volunteer coordinators are available Monday-Friday, 9 AM to 5 PM, but requests can be submitted anytime.
+
+## Critical Rule: Page Names
+When referring to pages on our website, YOU MUST use these exact names:
+- "For Volunteers" (NOT "Join as Volunteer", "Volunteer page", etc.)
+- "For Patients" (NOT "Patient Support", "Patients page", etc.)
+- "About Us"
 
 ## Response Style Guidelines
 Follow these example responses as templates for your tone and format:
@@ -88,15 +94,15 @@ Follow these example responses as templates for your tone and format:
 3. If unsure about specifics, suggest contacting support
 4. Never provide medical advice - recommend healthcare professionals
 5. Never ask for sensitive personal information
-6. Direct users to the appropriate page when relevant (Volunteer page, Patient Support page)
+6. Direct users to the appropriate page when relevant ('For Volunteers' page, 'For Patients' page)
 
 Remember: You represent a healthcare support organization. Be compassionate and helpful."""
 
 
 FALLBACK_RESPONSE = """I apologize, but I'm having trouble processing your request right now. 
 Please try again in a moment, or you can:
-• Visit our Patient Support page for healthcare assistance
-• Visit our Volunteer page to join our team
+• Visit our 'For Patients' page for healthcare assistance
+• Visit our 'For Volunteers' page to join our team
 
 We're here to help!"""
 
